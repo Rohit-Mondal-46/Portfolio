@@ -1,0 +1,12 @@
+:root {
+  /* Colours */
+  --color-white: #ffffff; /* Dark Gray */
+  --color-black: #000000; /* Dark Gray */
+  --color-primary: linear-gradient(90deg, #6495ed, #87cefa); /* Cornflower Blue to Light Sky Blue Gradient */
+  --color-secondary: linear-gradient(90deg, #03a9f4, #00e5ff); /* Bright Light Blue Gradient */
+  --color-dark: linear-gradient(90deg, #5a67d8, #7f9cf5); /* Indigo to Light Indigo Gradient */
+  --color-bg: #6495ed;/* White Background */
+
+  /* Fonts */
+  --font-roboto: "Roboto";
+}
