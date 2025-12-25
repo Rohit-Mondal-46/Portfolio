@@ -5,7 +5,6 @@ import { ThemeContext } from '../context/ThemeContext';
 const Navbar = ({ scrollPosition }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const [navbarClass, setNavbarClass] = useState('bg-transparent');
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -19,17 +18,10 @@ const Navbar = ({ scrollPosition }) => {
     { name: 'Contact', href: '#contact' },
   ];
 
-  useEffect(() => {
-    // Change navbar background when scrolling down
-    if (scrollPosition > 50) {
-      setNavbarClass('bg-white dark:bg-dark-800 shadow-md');
-    } else {
-      setNavbarClass('bg-transparent');
-    }
-  }, [scrollPosition]);
+ 
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navbarClass}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white dark:bg-dark-800 shadow-md`}>
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           <a href="#home" className="text-3xl font-bold text-primary-600 dark:text-primary-400">
