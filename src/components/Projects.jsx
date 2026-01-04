@@ -16,8 +16,8 @@ const Projects = () => {
       description: 'MediChain AI integrates AI-driven tools and blockchain to address challenges in the healthcare industry.',
       image: '/medichainImg.png',
       tags: ['React', 'TailwindCSS', 'Node.js', 'MongoDB', 'TensorFlow.js'],
-      liveUrl: 'http://localhost:5173',
-      githubUrl: 'https://github.com/Assistance26/Medichain-AI.git',
+      liveUrl: '',
+      githubUrl: 'https://github.com/Rohit-Mondal-46/medichain-ai',
     },
     {
       id: 2,
